@@ -55,7 +55,7 @@ You must already have docker installed to run the instructions before successful
 ## Instructions on how to run the scripts 
 1. git clone this respository using the code 
 ```
-git clone
+git clone https://github.com/anitaokoh/recap_assignment.git
 ```
 2. Create a docker image named `anita_test` using the code 
 ```
@@ -64,7 +64,7 @@ docker build -t anita_test .
  ( You need to have docker in your mackine or use codespace to run the instructions)
 3. Optional, check if the image named **anita_test** was created successfully using 
 ```
-docker image
+docker images
 ``` 
 4. Run an interactive bash terminal in the container by using the code 
 ```
