@@ -44,7 +44,7 @@ The churned amount is $200.
 _Note_
 - The churned amount logic and test only takes account if Rt−1 > 0 and Rt <=0 . I.e other cases like Rt <= 0 and Rt-1 <=0  etc return 0 as the churned amount
 
-3. ## Build file
+3. ### Build file
 - Requirement.txt - Contains all the python libraries required to run the source and test files successfully
 - Makefile - Helps to automate the library installations and test coverages
 - Dockerfile - Helps to containerize the scripts and the environment for reproducibility
