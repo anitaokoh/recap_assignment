@@ -30,16 +30,8 @@ The code file categories can be grouped into three
 
   
 **Calculation Definitions** 
-  - Net Revenue - The net revenue of contract A in month t is the sum of
-original_billing_amount of all its invoices with invoice_date in month t.
-For example, contract A could have had two invoices of $50 and $150 in December
-2021. That would result in a net revenue of $200 as shown in the table above.
-  - Churned Amount - Contract C churns in month t if C has net revenue
-Rt−1 > 0 in month t − 1 and net revenue Rt ≤ 0 in month t. The churned
-amount in month t is Rt−1.
-Consider again the table above. Contract A churned in January 2022 because it
-generated positive revenue in December 2021 but no revenue in January 2022.
-The churned amount is $200.
+  - Net Revenue - The net revenue of contract A in month t is the sum of original_billing_amount of all its invoices with invoice_date in month t. For example, contract A could have had two invoices of $50 and $150 in December 2021. That would result in a net revenue of $200 as shown in the table above.
+  - Churned Amount - Contract C churns in month t if C has net revenue Rt−1 > 0 in month t − 1 and net revenue Rt ≤ 0 in month t. The churned amount in month t is Rt−1. Consider again the table above. Contract A churned in January 2022 because it generated positive revenue in December 2021 but no revenue in January 2022. The churned amount is $200.
 
 _Note_
 - The churned amount logic and test only takes account if Rt−1 > 0 and Rt <=0 . I.e other cases like Rt <= 0 and Rt-1 <=0  etc return 0 as the churned amount
